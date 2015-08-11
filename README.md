@@ -2,28 +2,24 @@
 My first gem, the great escape. Seeing if your string contains SGR or other ASCII codes can be tricky, as when you print them to the screen they change the color/formatting of your terminal whether you want them to our not! Dumping results in more characters you have to either escape or sift through by eye. All the_great_escape does is escape strings that contain special sequences such as SGR parameters.
 
 # Installation
-1. Add this line to your application's Gemfile:
-
+* Add this line to your application's Gemfile:
 ```ruby
 gem 'the_great_escape'
 ```
-
-1. cd into your project's root:
+* cd into your project's root:
 ```
 $ cd my_project
 ```
-1. execute:
+* execute:
 ```
 $ bundle install
 ```
 ## Usage
-
-1. Require the_great_escape at the top of the file
+* Require the_great_escape at the top of the file
 ```ruby
 require 'the_great_escape'
 ```
-
-1. And now use!
+* And now use!
 ```ruby
 require 'the_great_escape'
 
