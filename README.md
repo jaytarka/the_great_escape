@@ -47,10 +47,10 @@ puts string.scan /\\e\[\d+m$/ # ["\\e[31m"] scan returns the SGR code at the end
 puts "\e[0" # reset your terminal to its default style if you run this code.
 ```
 ## Methods:
-Method  |  Arguments  |  Example Usage | Description
-------- | ----------- | ------------ | -
-escape  | string |  escaped = escape "hell \e[31m" |escapes the string passed to it so it can be safely printed later. Does not invalidate the string
-escape_puts  | string | escape_putis "hell \e[31m" | escapes the string passed to it and prints it immediately to the console
+| Method        | Example Usage | Description |
+| ------------- | ---------------------- | --- |
+| escape  STRING |  escaped = escape "hell \e[31m" | escapes the string passed to it so it can be safely printed later. Does not invalidate the string |
+| escape_puts STRING | escape_puts "hell \e[31m"  | escapes the string passed to it and prints it immediately to the console |
 
 # Contributing
 Okay, I'm pretty new to Ruby and utterly new to git so I've created this to learn about string escapement, git collaboration and how to package, release and install gems. Regardless, to contribute:
