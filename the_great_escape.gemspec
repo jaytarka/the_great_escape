@@ -10,6 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["jaytarka@hotmail.com"]
 
 	spec.summary       = 'Prints escaped strings to console'
+	spec.description	 = 'Escape strings with the Object#escape method. This escapes them so they can printed safely but they are not invalidated. Escape and print strings with one method with Object#escape_puts'
   spec.homepage      = 'https://github.com/jaytarka/the_great_escape'
   spec.license       = 'MIT'
 
@@ -19,6 +20,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.8"
-  spec.add_development_dependency "rspec", "~> 3.3.0"
+  spec.add_development_dependency "rspec", "~> 3.3"
   spec.add_development_dependency "rake", "~> 10.0"
 end
