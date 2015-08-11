@@ -1,5 +1,5 @@
-require "the_great_escape/version"
+require 'the_great_escape/escaper'
 
-module TheGreatEscape
-  # Your code goes here...
+class Object
+	include TheGreatEscape::Escaper
 end

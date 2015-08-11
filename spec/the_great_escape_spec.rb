@@ -1,11 +1,9 @@
 require 'spec_helper'
-
 describe TheGreatEscape do
-  it 'has a version number' do
-    expect(TheGreatEscape::VERSION).not_to be nil
-  end
+  specify{ expect(TheGreatEscape::VERSION).not_to be nil }
+end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
-  end
+describe Object do
+	it{ is_expected.to respond_to :escape }
+	it{ is_expected.to respond_to :escape_puts }
 end

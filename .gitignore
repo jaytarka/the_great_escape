@@ -7,3 +7,5 @@
 /pkg/
 /spec/reports/
 /tmp/
+*.sw*
+the_great_escape-*.gem
