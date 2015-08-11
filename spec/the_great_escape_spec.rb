@@ -1,27 +1,9 @@
 require 'spec_helper'
-
 describe TheGreatEscape do
   specify{ expect(TheGreatEscape::VERSION).not_to be nil }
+end
+
+describe Object do
 	it{ is_expected.to respond_to :escape }
-
-	let(:string_one){ %q{\e[542mI am just a normal lorem string\e[0m}}
-	let(:inspected_string_one){ %q{\"\\e[542mI am just a normal lorem string\\e[0m\"}}
-	let(:escaped_string_one){ %q{\e[542mI am just a normal lorem string\e[0m}}
-
-	let(:string_two){ 'ust a normal so called \'lorem\' string' }
-	let(:escaped_string_two){ 'ust a normal so called \'lorem\' string' }
-
-	describe '.escape' do
-		subject{ TheGreatEscape.escape string }
-		
-		context 'when string is string_one' do
-			let(:string){ string_one }
-			it{ is_expected.to eq escaped_string_one }
-		end
-
-		context 'when string is string_two' do
-			let(:string){ string_two }
-			it{ is_expected.to eq escaped_string_two }
-		end
-	end
+	it{ is_expected.to respond_to :escape_puts }
 end
