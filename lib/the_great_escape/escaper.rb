@@ -5,7 +5,7 @@ module TheGreatEscape
 		end
 
 		def escape string
-			string.dump.gsub /"/, ''
+			string.to_s.dump.gsub /"/, ''
 		end
 	end
 end
